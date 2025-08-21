@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario Definitivo: Querétaro | 24 - 29 de Agosto, 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f9fb;
+            color: #333;
+            margin: 0;
+            padding: 25px;
+        }
+        .header-container {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .header-container h1 {
+            color: #2c3e50;
+            font-size: 2.6em;
+            font-weight: 700;
+        }
+        .header-container p {
+            color: #7f8c8d;
+            font-size: 1.3em;
+        }
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 20px;
+        }
+        .day-column {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            border-top: 5px solid;
+        }
+        .day-header {
+            color: white;
+            padding: 18px 15px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .events-list {
+            padding: 15px 20px 20px 20px;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .event-card {
+            border-left: 5px solid;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background: #fdfdfd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .event-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .event-card-music { border-color: #9b59b6; }
+        .event-card-family { border-color: #2ecc71; }
+        .event-card-workshop { border-color: #f39c12; }
+        .event-card-culture { border-color: #e74c3c; }
+        .event-card-social { border-color: #3498db; }
+        .event-card-gastronomy { border-color: #d35400; }
+
+        .event-time {
+            font-weight: 700;
+            font-size: 0.95em;
+            color: #333;
+        }
+        .event-title {
+            font-size: 1.15em;
+            font-weight: 700;
+            margin: 5px 0;
+            color: #2c3e50;
+        }
+        .event-location, .event-notes {
+            font-size: 0.9em;
+            color: #555;
+            margin: 4px 0;
+        }
+        .all-week-container {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .all-week-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-size: 1.8em;
+        }
+        .all-week-container .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .all-week-container .category-list h3 {
+             border-bottom: 3px solid #3498db;
+             padding-bottom: 8px;
+             margin-bottom: 15px;
+             color: #2c3e50;
+        }
+        .all-week-container ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .all-week-container li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .all-week-container li strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Itinerario de Actividades: Querétaro</h1>
+        <p>24 - 29 de Agosto, 2025</p>
+    </div>
+
+    <div class="calendar-container">
+        <!-- Sunday -->
+        <div class="day-column" style="border-color:#e67e22;">
+            <div class="day-header" style="background-color:#e67e22;">Domingo, 24 de Agosto</div>
+            <div class="events-list">
+                <div class="event-card event-card-family">
+                    <p class="event-time">7:30 AM</p>
+                    <p class="event-title">🏃‍♂️ Acuatlón (Carrera y Nado)</p>
+                    <p class="event-location">Club Campestre de Querétaro, A.C.</p>
+                </div>
+                 <div class="event-card event-card-workshop">
+                    <p class="event-time">12:00 PM - 4:00 PM (Gratis)</p>
+                    <p class="event-title">🏺 Taller de Cerámica</p>
+                    <p class="event-location">Taller "Tierra Adentro", CEART</p>
+                    <p class="event-notes">Requiere registro previo.</p>
+                </div>
+                <div class="event-card event-card-social">
+                    <p class="event-time">1:00 PM en adelante</p>
+                    <p class="event-title">🛍️ Macro Bazar Mercadito Consciente</p>
+                    <p class="event-location">Plaza Esfera</p>
+                </div>
+                <div class="event-card event-card-culture">
+                    <p class="event-time">4:00 PM (Gratis)</p>
+                    <p class="event-title">☕ Raíz: Un viaje al Interior</p>
+                    <p class="event-location">Blue Java Coffee</p>
+                </div>
+                 <div class="event-card event-card-music">
+                    <p class="event-time">5:00 PM</p>
+                    <p class="event-title">🎻 Concierto: Tributo a Ghibli</p>
+                    <p class="event-location">Auditorio "Francisco Muñoz", CEART</p>
+                    <p class="event-notes">Costo: $140 - $230</p>
+                </div>
+                 <div class="event-card event-card-culture">
+                    <p class="event-time">Todo el día (ÚLTIMO DÍA)</p>
+                    <p class="event-title">🎨 Expo: "Crónicas de Entropía" y "NOW"</p>
+                    <p class="event-location">Museo de Arte Contemporáneo.</p>
+                    <p class="event-notes">Entrada Libre.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monday -->
+        <div class="day-column" style="border-color:#f1c40f;">
+            <div class="day-header" style="background-color:#f1c40f;">Lunes, 25 de Agosto</div>
+            <div class="events-list">
+                 <div class="event-card event-card-family">
+                    <p class="event-time">10:30 AM - 6:00 PM</p>
+                    <p class="event-title">🏊‍♂️ Day Pass en Alberca</p>
+                    <p class="event-location">Hotel Hacienda Jurica</p>
+                    <p class="event-notes">Para 2 adultos y 2 niños. No aplica en festivos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="day-column" style="border-color:#1abc9c;">
+            <div class="day-header" style="background-color:#1abc9c;">Martes, 26 de Agosto</div>
+            <div class="events-list">
+                 <div class="event-card event-card-social">
+                    <p class="event-time">9:00 AM</p>
+                    <p class="event-title">♥️ Bingo a Beneficencia</p>
+                    <p class="event-location">BigBola Queretaro Plaza Sta. Maria</p>
+                </div>
+                <div class="event-card event-card-workshop">
+                    <p class="event-time">4:00 PM - 7:00 PM</p>
+                    <p class="event-title">🎥 Inicia Diplomado Audiovisual</p>
+                    <p class="event-location">Centro de las Artes (CEART)</p>
+                    <p class="event-notes">Grupo 1 (Martes)</p>
+                </div>
+                <div class="event-card event-card-culture">
+                    <p class="event-time">7:00 PM - 10:00 PM</p>
+                    <p class="event-title">💃 Taller de Danzón</p>
+                    <p class="event-location">Centro de las Artes (CEART)</p>
+                </div>
+                <div class="event-card event-card-gastronomy">
+                    <p class="event-time">7:00 PM en adelante</p>
+                    <p class="event-title">Promoción Buffet en "La Vaka"</p>
+                    <p class="event-location">La Vaka Juriquilla</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="day-column" style="border-color:#2980b9;">
+            <div class="day-header" style="background-color:#2980b9;">Miércoles, 27 de Agosto</div>
+            <div class="events-list">
+                 <div class="event-card event-card-culture">
+                    <p class="event-time">5:00 PM (Gratis)</p>
+                    <p class="event-title">🎬 Cine Francés: "Cannes, Ciudad del Miedo"</p>
+                    <p class="event-location">Cineteca Rosalio Solano</p>
+                </div>
+                <div class="event-card event-card-workshop">
+                    <p class="event-time">6:00 PM</p>
+                    <p class="event-title">🎨 Taller de Malas (Joyería)</p>
+                    <p class="event-location">CEART Querétaro</p>
+                </div>
+                <div class="event-card event-card-social">
+                    <p class="event-time">7:30 PM</p>
+                    <p class="event-title">🎤 Conferencia General</p>
+                    <p class="event-location">Foro Quirófano, CEART</p>
+                    <p class="event-notes">Cuota: $100</p>
+                </div>
+                 <div class="event-card event-card-music">
+                    <p class="event-time">8:00 PM</p>
+                    <p class="event-title">🎵 Concierto: "La Belleza de la Transformación"</p>
+                    <p class="event-location">Auditorio "Francisco Muñoz", CEART</p>
+                     <p class="event-notes">Costo: $180 - $250</p>
+                </div>
+                 <div class="event-card event-card-music">
+                    <p class="event-time">9:00 PM</p>
+                    <p class="event-title">🎶 Música en vivo: Blanco/Cupich/Nandayapa</p>
+                    <p class="event-location">MOSER CAFÉ - KULTUR</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="day-column" style="border-color:#8e44ad;">
+            <div class="day-header" style="background-color:#8e44ad;">Jueves, 28 de Agosto</div>
+            <div class="events-list">
+                 <div class="event-card event-card-culture">
+                    <p class="event-time">5:00 PM (Gratis)</p>
+                    <p class="event-title">🎬 Cine Francés: "Van Gogh"</p>
+                    <p class="event-location">Cineteca Rosalio Solano</p>
+                </div>
+                 <div class="event-card event-card-culture">
+                    <p class="event-time">6:00 PM</p>
+                    <p class="event-title">📚 Presentación de Libro: "Los Amuletos..."</p>
+                    <p class="event-location">Coro Bajo, Centro de las Artes (CEART)</p>
+                </div>
+                 <div class="event-card event-card-music">
+                    <p class="event-time">8:00 PM</p>
+                    <p class="event-title">🎻 Concierto Apertura Filarmónica de Querétaro</p>
+                    <p class="event-location">Teatro Metropolitano</p>
+                </div>
+                <div class="event-card event-card-culture">
+                    <p class="event-time">Noche (Elegir una)</p>
+                    <p class="event-title">🎭 Noche de Teatro: Múltiples Obras</p>
+                    <p class="event-location">Varios teatros en el centro</p>
+                    <p class="event-notes">¡Es la noche principal de teatro de la semana!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="day-column" style="border-color:#c0392b;">
+            <div class="day-header" style="background-color:#c0392b;">Viernes, 29 de Agosto</div>
+            <div class="events-list">
+                <div class="event-card event-card-family">
+                    <p class="event-time">9:00 AM</p>
+                    <p class="event-title">🏍️ Track Day de Motocicletas</p>
+                    <p class="event-location">Autodromo Ecocentro</p>
+                </div>
+                 <div class="event-card event-card-workshop">
+                    <p class="event-time">7:00 PM</p>
+                    <p class="event-title">✏️ Curso "Inquieta" para Productores</p>
+                    <p class="event-location">Centro de las Artes (CEART)</p>
+                </div>
+                 <div class="event-card event-card-music">
+                    <p class="event-time">7:00 PM (Gratis)</p>
+                    <p class="event-title">🎻 Recital de Violoncello: Francisco Mendoza R.</p>
+                    <p class="event-location">Teatro CEM “Arturo Márquez”</p>
+                </div>
+                 <div class="event-card event-card-culture">
+                    <p class="event-time">7:00 PM (Gratis)</p>
+                    <p class="event-title">💬 Charla con Antonio Vilanova</p>
+                    <p class="event-location">Claustro del CEART</p>
+                </div>
+                <div class="event-card event-card-music">
+                    <p class="event-time">8:15 PM</p>
+                    <p class="event-title">🎷 Jazz / Funk Trío: "Chicles De Mora"</p>
+                    <p class="event-location">MOSER CAFÉ - KULTUR</p>
+                </div>
+                <div class="event-card event-card-social">
+                    <p class="event-time">9:30 PM</p>
+                    <p class="event-title">🎤 Show de Stand Up</p>
+                    <p class="event-location">La Caja Popular</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="all-week-container">
+        <h2>Actividades Flexibles y Disponibles Toda la Semana</h2>
+        <div class="grid">
+            <div class="category-list">
+                <h3>🏛️ Museos y Cultura</h3>
+                <ul>
+                    <li><strong>MUCAL (Museo del Calendario)</strong>Un museo único y visualmente atractivo.</li>
+                    <li><strong>Museo de Arte & Contemporáneo</strong>Varias exposiciones activas durante tu visita (ver calendario).</li>
+                    <li><strong>Planetario "Péndulo"</strong>Shows inmersivos del cosmos para toda la familia.</li>
+                    <li><strong>Festival "Cruzada por el Teatro"</strong>Evento de teatro en toda la ciudad. Busca sus carteleras.</li>
+                </ul>
+            </div>
+            <div class="category-list">
+                <h3>🌳 Parques y Aventura</h3>
+                <ul>
+                    <li><strong>Parque Nacional El Cimatario</strong>Ideal para caminatas y picnics.</li>
+                    <li><strong>Zoologico Wameru</strong>Un zoológico con animales de todo el mundo.</li>
+                    <li><strong>GP Park</strong>Parque con trampolines y muros de escalar.</li>
+                     <li><strong>Alameda Hidalgo & Jardín Zenea</strong>Parques céntricos para relajarse y jugar.</li>
+                </ul>
+            </div>
+             <div class="category-list">
+                <h3>🎳 Entretenimiento y Comida</h3>
+                <ul>
+                    <li><strong>Metro Lanes Bowling</strong>Boliche, billar y ping pong.</li>
+                    <li><strong>K1 Speed</strong>Go-karts bajo techo (ideal para niños más grandes).</li>
+                    <li><strong>Dreaming</strong>Centro de juego imaginativo para niños pequeños.</li>
+                    <li><strong>Chiles en Nogada</strong>Prueba este platillo de temporada en restaurantes del Centro Histórico.</li>
+                </ul>
+            </div>
+             <div class="category-list">
+                <h3>🗺️ Tours y Excursiones</h3>
+                <ul>
+                    <li><strong>Tranvía Turístico (Trolley)</strong>Un recorrido relajado por el Centro Histórico.</li>
+                    <li><strong>Excursión a Bernal</strong>Visita el monolito gigante y prueba las gorditas locales.</li>
+                    <li><strong>Excursión a Tequisquiapan</strong>Ideal para un día de pueblo mágico.</li>
+                    <li><strong>Excursión a Amealco</strong>Descubre el origen de las muñecas "Lele".</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
